@@ -1,0 +1,103 @@
+*{
+margin-top: 0;
+}
+
+.userDetails{
+  background-color: #31363F;
+  height: 120vh;
+  backdrop-filter: blur(10px);
+}
+strong{
+    font-size: 1.25rem;
+}
+.cardBackground{
+  background:#0C359E;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.cardBackground:hover {
+  transform: scale(1.05); 
+}
+.custom-select {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  width: 300px; /* Adjust width as needed */
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.custom-select select {
+  width: 60%;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.custom-select::after {
+  content: '\25BC'; /* Down arrow character */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+/* forget password css */
+
+.container {
+    background: #35374B;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  .ChangePassword{
+    background: #35374B;
+    height: 100vh;
+  }
+
+  /* home page css */
+  .menuIcon{
+    margin-top: 1rem;
+  }
+  .logo{
+    height: 50px;
+    width: 50px;
+  }
+  
