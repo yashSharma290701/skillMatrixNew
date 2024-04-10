@@ -11,6 +11,7 @@ import ViewData from './Components/viewdata';
 import Approve from './Components/approve';
 import Projects from "./Components/project"
 import {ProSidebarProvider} from 'react-pro-sidebar'
+import Dash from './Components/dashboard'
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
           <Route  path="/viewData" element={<ViewData/>} />
           <Route  path="/approve" element={<Approve/>} />
           <Route  path="/project" element={<Projects/>} />
+          <Route  path="/dashboard" element={<Dash/>} />
         </Routes>
       </BrowserRouter>
       </ProSidebarProvider>

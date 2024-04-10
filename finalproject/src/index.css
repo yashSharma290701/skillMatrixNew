@@ -210,6 +210,7 @@ strong{
     display: flex;
     justify-content: space-between;
     background-color: orange;
+    width: ;
   }
   .Navbar .adminName{
     margin-right: 450px;

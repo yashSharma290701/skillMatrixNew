@@ -4,7 +4,6 @@ import Navbar from '../HomePage/Navbar';
 import SideBar from '../HomePage/SideBar';
 
 import {
-  MDBBtn,
   MDBContainer,
   MDBRow,
   MDBCol,
@@ -55,34 +54,35 @@ function RegisterUser() {
   return (
     <div  >
       <Navbar />
-      <div class="container-fluid text-center sidebar">
-        <div class="row sidebar">
+      <div class="container-fluid text-center " style={{height:"100vh"}}>
+        <div class="row ">
           <div class="col-2 p-0 ">
             <SideBar />
           </div>
-          <div class="col-10 userDetails ">
-            <MDBContainer fluid >
-              <MDBRow className='justify-content-center align-items-center m-5'>
-                <MDBCard className='p-0'>
-                  <MDBCardBody className='px-4 certificateDetails'>
-                    <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+          <div class="col-10 userDetails border " >
+
+            <MDBContainer >
+              <MDBRow className='justify-content-center align-items-center '>
+                <MDBCard >
+                  <MDBCardBody className=' certificateDetails' style={{height:"100vh",marginLeft:"2rem"}} >
+                    <h3 className="fw-bold  ">Registration Form</h3>
                     <MDBRow>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4 inputColor' label='First Name' size='lg' id='form1' type='text' 
+                        <MDBInput wrapperClass='mb-2 inputColor' label='First Name' size='lg' id='form1' type='text' 
                         name='firstName' onChange={handleEvent}
                         />
                       </MDBCol>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4 inputColor' label='Last Name' size='lg' id='form2' type='text'
+                        <MDBInput wrapperClass='mb-2 inputColor' label='Last Name' size='lg' id='form2' type='text'
                         name='lastName' onChange={handleEvent} />
                       </MDBCol>
                     </MDBRow>
                     <MDBRow>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4 inputColor' label='Age' size='lg' id='form3' type='text' name ="age"
+                        <MDBInput wrapperClass='mb-2 inputColor' label='Age' size='lg' id='form3' type='text' name ="age"
                         onChange={handleEvent} />
                       </MDBCol>
-                      <MDBCol md='6' className='mb-4'>
+                      <MDBCol md='6' className='mb-2'>
                         <h6 className="fw-bold">Gender: </h6>
                         <MDBRadio name='gender' id='inlineRadio1' value='Female' label='Female' inline onClick={handleEvent} />
                         <MDBRadio name='gender' id='inlineRadio2' value='Male' label='Male' inline  onClick={handleEvent}/>
@@ -91,13 +91,13 @@ function RegisterUser() {
                     </MDBRow>
                     <MDBRow>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4 inputColor' label='Email' size='lg' id='form4' type='email'
+                        <MDBInput wrapperClass='mb-2 inputColor' label='Email' size='lg' id='form4' type='email'
                         name='email'
                         onChange={handleEvent}
                         />
                       </MDBCol>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4 inputColor' label='Phone Number' size='lg' id='form5' type='rel'
+                        <MDBInput wrapperClass='mb-2 inputColor' label='Phone Number' size='lg' id='form5' type='rel'
                         name='phoneNumber' 
                         onChange={handleEvent}
                         />
@@ -105,13 +105,13 @@ function RegisterUser() {
                     </MDBRow>
                     <MDBRow>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4 inputColor' label='User Id ' size='lg' id='form4' type='text'
+                        <MDBInput wrapperClass='mb-2 inputColor' label='User Id ' size='lg' id='form4' type='text'
                         name='userId'
                         onChange={handleEvent}
                         />
                       </MDBCol>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4 inputColor' label='State' size='lg' id='form5' type='rel'
+                        <MDBInput wrapperClass='mb-2 inputColor' label='State' size='lg' id='form5' type='rel'
                         name='State'
                         onChange={handleEvent}
                         />
@@ -121,7 +121,7 @@ function RegisterUser() {
                     {/* /fdjkv */}
                     <MDBRow>
                       <MDBCol md='12'>
-                        <MDBInput wrapperClass='mb-4 inputColor' label='Designation ' size='lg' id='form4' type='text'
+                        <MDBInput wrapperClass='mb-2 inputColor' label='Designation ' size='lg' id='form4' type='text'
                         name='designation'
                         onChange={handleEvent}
                         />
@@ -146,6 +146,7 @@ function RegisterUser() {
                 </MDBCard>
               </MDBRow>
             </MDBContainer>
+
           </div>
         </div>
       </div>

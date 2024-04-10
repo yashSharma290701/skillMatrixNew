@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const certificateData = new  mongoose.Schema({
     userId:{
         type:String,
-        // unique:true
+        // unique:true 
     },
     certificateId:{
         type:String,

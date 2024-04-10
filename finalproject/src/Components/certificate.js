@@ -4,14 +4,12 @@ import Navbar from '../HomePage/Navbar';
 import SideBar from '../HomePage/SideBar';
 import TextField from '@mui/material/TextField';
 import {
-  MDBBtn,
   MDBContainer,
   MDBRow,
   MDBCol,
   MDBCard,
   MDBCardBody,
-  MDBInput,
-  MDBRadio
+  MDBInput
 } from 'mdb-react-ui-kit';
 import { useNavigate } from 'react-router-dom';
 function CertificateUser() {
@@ -42,7 +40,7 @@ const navigate = useNavigate()
         body: JSON.stringify({ data })
       })
     console.log(response)
-    if(response.status==200){
+    if(response.status===200){
     alert('Certificate Added')
     navigate('/Home')
   }
@@ -60,11 +58,12 @@ const navigate = useNavigate()
             <SideBar />
           </div>
           <div class="col-10 userDetails ">
+            <div className='container'>
             <MDBContainer fluid className=''>
               <MDBRow className='justify-content-center align-items-center m-5 '>
                 <MDBCard className='p-0'>
                   <MDBCardBody className='px-4 certificateDetails'>
-                    <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-5">Certificate</h3>
+                    <h3 className="fw-bold mb-2 pb-2 pb-md-0 mb-md-5">Certificate</h3>
                     <MDBRow>
                       <MDBCol md='6'>
                       <TextField sx={{ width: '100%', maxWidth: 500 }} label="EmployeeId" name="EmployeeID" variant="filled" className="mb-3 mt-3  empID" 
@@ -77,7 +76,7 @@ const navigate = useNavigate()
                     </MDBRow>
                     <MDBRow>
                       <MDBCol md='12'>
-                        {/* <MDBInput wrapperClass='mb-4 certificateInput' label='CourseName' size='lg' id='form3' type='text' name ="CourseName" */}
+                        {/* <MDBInput wrapperClass='mb-2 certificateInput' label='CourseName' size='lg' id='form3' type='text' name ="CourseName" */}
                         {/* onChange={handleEvent} /> */}
                         <TextField sx={{ width: '100%', maxWidth: 700 }} label="CourseName" name="CourseName" variant="filled" className="mb-3 mt-3  empID" 
                       onChange={handleEvent} InputLabelProps={{ style: { color: 'brown' } } } />
@@ -85,14 +84,14 @@ const navigate = useNavigate()
                     </MDBRow>
                     <MDBRow>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4 certificateInput' label='Starting Date' size='lg' id='form4' type='Date'
+                        <MDBInput wrapperClass='mb-2 certificateInput' label='Starting Date' size='lg' id='form4' type='Date'
                         name='StartingDate'
                         onChange={handleEvent}
                         />
                         
                       </MDBCol>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4 certificateInput' label='Ending Date' size='lg' id='form5' type='Date'
+                        <MDBInput wrapperClass='mb-2 certificateInput' label='Ending Date' size='lg' id='form5' type='Date'
                         name='EndingDate' 
                         onChange={handleEvent}
                         />
@@ -100,24 +99,25 @@ const navigate = useNavigate()
                     </MDBRow>
                     <MDBRow>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4 certificateInput' label='OrganizationName' size='lg' id='form4' type='text'
+                        <MDBInput wrapperClass='mb-2 certificateInput' label='OrganizationName' size='lg' id='form4' type='text'
                         name='OrganizationName'
                         onChange={handleEvent}
                         />
                       </MDBCol>
                       <MDBCol md='6'>
-                        <MDBInput wrapperClass='mb-4 certificateInput' label='Tech Stack' size='lg' id='form4' type='text'
+                        <MDBInput wrapperClass='mb-2 certificateInput' label='Tech Stack' size='lg' id='form4' type='text'
                         name='techstack'
                         onChange={handleEvent}
                         />
                       </MDBCol>
                     </MDBRow>
-                    <button className='mb-4 btn-primary' size='lg' onClick={handleSubmit} >Add Certificate</button>
+                    <button className='mb-2 btn-primary' size='lg' onClick={handleSubmit} >Add Certificate</button>
                   </MDBCardBody>
                 </MDBCard>
               </MDBRow>
             </MDBContainer>
           </div>
+        </div>
         </div>
       </div>
     </div>
