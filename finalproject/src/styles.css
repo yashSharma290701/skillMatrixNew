@@ -1,0 +1,29 @@
+.profile{
+    display: flex;
+}
+.addUser{
+    display: flex;
+}
+.dashboard{
+    display: flex;
+}
+.certificate{
+    display: flex
+}
+.Skills{
+    display: flex;
+}
+.ViewData{
+    display: flex;
+}
+.Project{
+    display: flex;
+}
+.profileSection{
+    display: flex;
+   justify-content: center;
+}
+.recommendation{
+    display: flex;
+    justify-content: center;
+}
